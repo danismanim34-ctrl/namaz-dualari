@@ -31,6 +31,9 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Enable Web & Setup Project
+        run: flutter create . --platforms web
+
       - name: Build Web
         run: flutter build web --release --base-href "/namaz-dualari/"
 
